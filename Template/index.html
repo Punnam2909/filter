@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Family</title>
+</head>
+<body>
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url 'menu' %}">Menu</a>
+
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url 'family' %}">Family</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url 'add' %}">Add</a>
+    </li>
+
+</ul>
+
+</body>
+
+</html>
+
+{% block content %}
+<h1>This is Menu</h1>
+{% endblock content %}

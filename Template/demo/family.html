@@ -1,0 +1,50 @@
+{%extends "index.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block content%}
+<body>
+<h1>This is Family Information </h1>
+<!--{{surnames}} </br>-->
+<!--{{members}}-->
+<div>
+    {% for surname in surnames %}
+    <p><a href="/demo/selection/{{surname.id}}/">{{surname.family_name}}</a></p>
+    {% endfor %}
+</div>
+<!--<div>-->
+<!--  <form action="" method="POST"> {% csrf_token %}-->
+
+<!--      <label for="initial">initial</label>-->
+<!--      <input type="text" id="initial" name="name" placeholder="Your name..">-->
+
+<!--      </br>-->
+
+<!--      <label for="name">Name</label>-->
+<!--      <input type="text" id="name" name="name" placeholder="Your name..">-->
+
+<!--      </br>-->
+
+<!--&lt;!&ndash;      <label for="dob">DOB</label>&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="text" id="dob" name="Date" placeholder="MM/DD/YYYY" >&ndash;&gt;-->
+
+<!--      </br>-->
+
+<!--      <input type="submit" value="Submit">-->
+
+<!--  </form>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--    {% for member in members %}-->
+<!--    <b>Surname:</b><p>{{member.initial_name}}</p>-->
+<!--    <b>Name:</b><p>{{member.person_name}}</p>-->
+<!--    <i>DOB:</i><p>{{member.person_dob}}</p>-->
+<!--    {% endfor %}-->
+<!--</div>-->
+
+</body>
+{% endblock content %}
+</html>

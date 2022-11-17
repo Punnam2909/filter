@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Family/filter</title>
+</head>
+
+<body>
+<h1>Surname:{{surnames}}</h1>
+<div>
+    {% for member in members %}
+<!--    <b>Surname:</b><p>{{member.initial_name}}</p>-->
+    <b>Name:</b><p>{{member.person_name}}</p>
+    <i>DOB:</i><p>{{member.person_dob}}</p>
+    {% endfor %}
+</div>
+</body>
+
+</html>
